@@ -110,7 +110,7 @@ function boundary(n) {
 }
 
 let ex4;
-ex4 = boundary(400);
+ex4 = boundary(50);
 console.log(ex4)
 
 /* EXERCISE 5
@@ -121,7 +121,7 @@ console.log("\n----------EXERCISE 5---------\n")
 
 function strivify(stringInput) {
     if (
-        stringInput==="Strive"
+        stringInput.startsWith("Strive")
     ) {
         let result = stringInput;
         return result;
@@ -132,7 +132,7 @@ function strivify(stringInput) {
 }
 
 let ex5;
-ex5 = strivify("Strive");
+ex5 = strivify("Strive Test");
 console.log(ex5);
 
 
@@ -208,8 +208,8 @@ console.log("\n----------EXERCISE 9---------\n")
 
 function cutString(myString2) {
     withoutFirstAndLastCharacter = "";
-    console.log("Old String: ", myString2);
-    for (i = 1; i < myString2.length; i++)
+    console.log(`Old String: ${myString2} \n`);
+    for (i = 1; i < myString2.length-1; i++)
     {
         withoutFirstAndLastCharacter += myString2[i];
     }
@@ -217,7 +217,7 @@ function cutString(myString2) {
 }
 
 let ex9;
-ex9 = cutString("This is a test.")
+ex9 = cutString("DENEME");
 console.log(ex9);
 
 /* EXERCISE 10
